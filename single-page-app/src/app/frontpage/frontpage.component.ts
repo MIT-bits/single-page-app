@@ -36,6 +36,8 @@ export class FrontpageComponent implements OnInit {
           document.getElementById('loader').style.display = 'none';
         }
       },
+      // Disable accountchooser.com
+      credentialHelper: firebaseui.auth.CredentialHelper.NONE,
       // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
       signInFlow: 'popup',
       signInSuccessUrl: '<url-to-redirect-to-on-success>',
